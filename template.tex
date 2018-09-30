@@ -1,0 +1,103 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[10pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvcolor{blue}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+\usepackage{soul}
+% adjust the page margins
+\usepackage[scale=0.90]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Shaurya}{Gupta}
+%\title{Computer Science Junior}                               % optional, remove / comment the line if not wanted
+\address{A702, Boys Hostel, IIT Patna, Bihta, Patna, Bihar}{801103}{India}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{+91~9955530580}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+\email{shauryab98@outlook.com}
+% optional, remove / comment the line if not wanted
+\homepage{http://shauryab98.github.io}                         % optional, remove / comment the line if not wanted
+\social[linkedin]{shauryab98}                        % optional, remove / comment the line if not wanted
+\social[github]{shauryab98}                              % optional, remove / comment the line if not wanted
+\extrainfo{Last Updated: 25/08/2018}                 % optional, remove / comment the line if not wanted
+
+
+% bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
+%   to show numerical labels in the bibliography (default is to show no labels)
+\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
+%   to redefine the bibliography heading string ("Publications")
+%\renewcommand{\refname}{Articles}
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Education}
+\cventry{2016--Present}{B.Tech in Computer Science and Engineering}{Indian Institute of Technology Patna}{}{\textit{8.55/10}}{}  % arguments 3 to 6 can be left empty
+\cventry{2014--2016}{Senior Secondary, CBSE}{SGHMS}{Chandigarh}{\textit{91.6\%}}{}
+
+\section{Work experience}
+\cventry{Summer, 2018}{Tech Intern}{\textbf{D.E. Shaw India}}{Hyderabad}{}{Worked on \textit{Efficient Information Retrieval from SEC Filings.}}
+
+
+\section{Achievements}
+\cvitem{\textbf{ACM-ICPC '18}}{Member of team ButterRoti which was ranked \href{https://icpc.baylor.edu/regionals/finder/world-finals-2018/standings}{\ul{56th (out of 140 teams) in \textbf{ACM-ICPC World Finals 2018}}} and \href{https://icpc.baylor.edu/regionals/finder/icpckolkatakanpur-2017/standings}{\ul{2nd in Asia Kolkata-Kanpur Regional Contest - 2017}}.}
+\cvitem{Competitive Programming}{
+\begin{itemize}%
+\item \href{http://codeforces.com/profile/Gear4}{\textbf{Codeforces}}: Highest Rating: 2074[Violet]
+\item \href{http://codechef.com/users/gear4}{\textbf{Codechef}}: Highest Rating: 2263[Orange]
+\item \href{https://csacademy.com/user/gear4}{\textbf{CSAcademy}}: Highest Rating: 1831[Yellow]
+\item \href{https://www.topcoder.com/members/Gear4}{\textbf{TopCoder}}: 6th in Topcoder Collegiate Contest India - 2017
+\item \href{https://www.hackerearth.com/@gear4}{\textbf{HackerEarth}}: 31st in IndiaHacks 2017 Programming Finale (11th in India)
+\end{itemize}}
+\cvitem{JEE Advanced}{Secured 98.74 percentile out of 150,000 candidates.}
+\cvitem{KVPY}{Recipient of Kishore Vaigyanik Protsahan Yojana (KVPY) Scholarship, funded by the Department of Science and Technology of the Government of India.}
+
+\section{Courses}
+\cvitem{Computer Science}{Database, Computer Architecture, Formal Language \& Automata Theory, Programming and Data Structures, Algorithms, Switching Theory, Innovation Design Lab}
+\cvitem{Mathematics}{Linear Algebra and ODE, Real and Complex Analysis, Partial Differential Equations, Discrete Mathematics, Probability Theory, Computational Topology, Algebra (Ongoing)}
+\cvitem{Others}{Introduction to Haskell (CIS194)}
+
+\section{Technical Skills}
+\cvitem{Working Knowledge}{C, C++, Python, SQL}
+\cvitem{Past Experience}{Javascript, Bash, Haskell, Django, GNU/Linux, \LaTeX}
+
+
+\section{Projects}
+\cvitem{Linux Shell}{Implemented a Linux shell from scratch in C.}
+\cvitem{Maze Generator}{Implemented various 2D maze generation algorithms in C++.}
+\cvitem{MyRating}{Django Web App that aggregates competitive programming ratings from different websites.}
+
+\section{Position of Responsibility}
+\cvitem{2018-Present}{Coordinator, Competitive Programming, NJACK(Computer Club). Wrote problems for ByteRace, the annual online coding competition of IIT Patna. Conducted classes on C++ and Competitive Programming for students.}
+
+\newpage
+
+\section {Cover Letter}
+I'm proficient with Algorithms and Data Structures and took part in the ACM ICPC World Finals 2018. I'm also interested in Functional Programming and Data Science. I previously interned interned at D.E. Shaw India and enjoyed working in the finance sector.
+
+\end{document}
+
+
+%% end of file `template.tex'.
