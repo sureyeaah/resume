@@ -6,7 +6,7 @@
 % available at http://www.latex-project.org/lppl/.
 
 
-\documentclass[10pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\documentclass[12pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
 % moderncv themes
 \moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
@@ -15,7 +15,7 @@
 %\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
 
 % character encoding
-\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex or lualatex, replace by the encoding you are using
 %\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
 \usepackage{soul}
 % adjust the page margins
@@ -30,10 +30,10 @@
 \phone[mobile]{+91~9955530580}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
 \email{shauryab98@outlook.com}
 % optional, remove / comment the line if not wanted
-\homepage{http://shauryab98.github.io}                         % optional, remove / comment the line if not wanted
+\homepage{https://shauryab98.github.io}                         % optional, remove / comment the line if not wanted
 \social[linkedin]{shauryab98}                        % optional, remove / comment the line if not wanted
 \social[github]{shauryab98}                              % optional, remove / comment the line if not wanted
-\extrainfo{Last Updated: 25/08/2018}                 % optional, remove / comment the line if not wanted
+\extrainfo{Last Updated: 09/01/2019}                 % optional, remove / comment the line if not wanted
 
 
 % bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
@@ -54,43 +54,86 @@
 \makecvtitle
 
 \section{Education}
-\cventry{2016--Present}{B.Tech in Computer Science and Engineering}{Indian Institute of Technology Patna}{}{\textit{8.55/10}}{}  % arguments 3 to 6 can be left empty
+\cventry{2016 -- 2020 (Expected)}{Indian Institute of Technology Patna}{Bachelor of Technology in Computer Science and Engineering}{}{GPA: \textit{8.34/10.0} (After 5 semesters)}{}  % arguments 3 to 6 can be left empty
 \cventry{2014--2016}{Senior Secondary, CBSE}{SGHMS}{Chandigarh}{\textit{91.6\%}}{}
 
 \section{Work experience}
-\cventry{Summer, 2018}{Tech Intern}{\textbf{D.E. Shaw India}}{Hyderabad}{}{Worked on \textit{Efficient Information Retrieval from SEC Filings.}}
+\cventry{May 2018 - June 2018}{Tech Intern}{\textbf{D.E. Shaw India}}{Hyderabad}{}{
+\begin{itemize}%
+\item{Worked as a part of the \textit{Equities} team on \textit{Efficient Information Retrieval from SEC Filings}.}
+\item{Built a blazing fast distributed parser for the filings in Python.}
+\item{Devised an efficient algorithm to ensure no data duplicacy occurs in every possible scenario. Used MySQL as well as various libraries such as Numpy, Pandas, etc. for data manipulation and analysis.}
+\item{Wrote scripts for a CLI interface and scheduling periodic runs in Python and Bash.}
+\item{Achieved $\approx 50\times$ speed improvement over the existing Perl module for the entire pipeline.}
+\end{itemize}
+}
 
 
 \section{Achievements}
-\cvitem{\textbf{ACM-ICPC '18}}{Member of team ButterRoti which was ranked \href{https://icpc.baylor.edu/regionals/finder/world-finals-2018/standings}{\ul{56th (out of 140 teams) in \textbf{ACM-ICPC World Finals 2018}}} and \href{https://icpc.baylor.edu/regionals/finder/icpckolkatakanpur-2017/standings}{\ul{2nd in Asia Kolkata-Kanpur Regional Contest - 2017}}.}
-\cvitem{Competitive Programming}{
-\begin{itemize}%
-\item \href{http://codeforces.com/profile/Gear4}{\textbf{Codeforces}}: Highest Rating: 2074[Violet]
-\item \href{http://codechef.com/users/gear4}{\textbf{Codechef}}: Highest Rating: 2263[Orange]
-\item \href{https://csacademy.com/user/gear4}{\textbf{CSAcademy}}: Highest Rating: 1831[Yellow]
-\item \href{https://www.topcoder.com/members/Gear4}{\textbf{TopCoder}}: 6th in Topcoder Collegiate Contest India - 2017
-\item \href{https://www.hackerearth.com/@gear4}{\textbf{HackerEarth}}: 31st in IndiaHacks 2017 Programming Finale (11th in India)
-\end{itemize}}
-\cvitem{JEE Advanced}{Secured 98.74 percentile out of 150,000 candidates.}
-\cvitem{KVPY}{Recipient of Kishore Vaigyanik Protsahan Yojana (KVPY) Scholarship, funded by the Department of Science and Technology of the Government of India.}
+\cvitem{\textbf{ACM-ICPC WF '19}}{Member of team ButterRoti which was ranked \href{https://icpc.baylor.edu/regionals/finder/ICPC-Gwalior-Pune-2018/standings}{\ul{2nd in Asia Pune-Gwalior Regional Contest - 2018}} and qualified for {\textbf{ACM-ICPC World Finals 2019 (Portugal)}}.}
+\cvitem{\textbf{ACM-ICPC WF '18}}{Represented India in the finals of the Olympics of Programming. Member of team ButterRoti which was ranked \href{https://icpc.baylor.edu/regionals/finder/world-finals-2018/standings}{\ul{56th (out of 140 teams) in \textbf{ACM-ICPC World Finals 2018 (Beijing) }}} and \href{https://icpc.baylor.edu/regionals/finder/icpckolkatakanpur-2017/standings}{\ul{2nd in Asia Kolkata-Kanpur Regional Contest - 2017}}.}
 
-\section{Courses}
-\cvitem{Computer Science}{Database, Computer Architecture, Formal Language \& Automata Theory, Programming and Data Structures, Algorithms, Switching Theory, Innovation Design Lab}
-\cvitem{Mathematics}{Linear Algebra and ODE, Real and Complex Analysis, Partial Differential Equations, Discrete Mathematics, Probability Theory, Computational Topology, Algebra (Ongoing)}
-\cvitem{Others}{Introduction to Haskell (CIS194)}
-
-\section{Technical Skills}
-\cvitem{Working Knowledge}{C, C++, Python, SQL}
-\cvitem{Past Experience}{Javascript, Bash, Haskell, Django, GNU/Linux, \LaTeX}
-
+\cvitem{Comp Coding}{
+Candidate Master(Purple) on \href{http://codeforces.com/profile/Gear4}{Codeforces} and 6-star(Orange) on \href{http://codechef.com/users/gear4}{Codechef}.}
+\cvitem{TCC 2017}{Stood 6th in the onsite finals of Topcoder Collegiate Contest 2017.}
+\cvitem{JEE Adv}{Secured 98.74 percentile out of 150,000 candidates in JEE Advanced. (2016)}
+\cvitem{KVPY}{Recipient of the Kishore Vaigyanik Protsahan Yojana (KVPY) Scholarship by Govt. of India and IISc. Bangalore with an \textbf{All India Rank - 242} among 0.1 million candidates. (2016)}
+\cvitem{ANTHE}{Awarded 100\% scholarship by Aakash Institute for two years of engineering coaching. (2014)}
 
 \section{Projects}
-\cvitem{Linux Shell}{Implemented a Linux shell from scratch in C.}
-\cvitem{Maze Generator}{Implemented various 2D maze generation algorithms in C++.}
-\cvitem{MyRating}{Django Web App that aggregates competitive programming ratings from different websites.}
+\cventry{Jan 2019 -- Present}{AntJudge: Distributed Judge For Programming Competitions}{}{}{\newline \noindent {Under \textit{Prof. Mayank Agarwal, IIT Patna}\hfill} {\hfill (\textit{Erlang, Node.js, Docker Swarm})}}{
+    \begin{itemize}
+        \item{Docker Swarm based online judge written in Erlang.}
+        \item{Used Docker for sandbox execution of solutions.}
+        \item{Will be deployed in the IIT Patna network and used for various lab courses.}
+    \end{itemize}
+}
 
-\section{Position of Responsibility}
-\cvitem{2018-Present}{Coordinator, Competitive Programming, NJACK(Computer Club). Wrote problems for ByteRace, the annual online coding competition of IIT Patna. Conducted classes on C++ and Competitive Programming for students.}
+\cventry{Oct 2018 -- Dec 2018}{\href{https://github.com/shauryab98/Sea-Shell}{SeaShell: Linux Shell in C}}{}{}{\noindent {~\hfill} {\hfill (\textit{C, Flex, Bison})}}
+{
+    \begin{itemize}
+        \item{Implemented a Linux shell from scratch with piping, I/O redirection, regex and history features.}
+        \item{Implemented the parser using Flex and Bison.}
+    \end{itemize}
+}
+
+\cventry{Jan 2018 -- Feb 2018 }{\href{https://github.com/shauryab98/MazeGen}{Maze Generator}}{}{}{\noindent {~\hfill} {\hfill (\textit{C++})}}
+{
+    \begin{itemize}
+        \item{Implemented various 2D maze generation algorithms such as Prim's algorithm, Eller's algorithm,\\ Wilson's algorithm and Kruskal's algorithm.}
+        \item{Implemented a CLI as well as GUI interface with an option to export to jpeg.}
+    \end{itemize}
+}
+
+\cventry{May 2017 -- July 2017}{\href{https://github.com/shauryab98/Rating}{MyRating WebApp}}{}{}{\noindent {~\hfill} {\hfill (\textit{Python, Django, HTML, CSS})}}
+{
+    \begin{itemize}
+        \item{Web app that aggregates competitive programming ratings from different websites.}
+    \end{itemize}
+}
+
+\section{Technical Skills}
+\cvitem{Languages}{C, C++, Python, Java, Haskell, Erlang, JavaScript, Bash, SQL}
+\cvitem{Tools and Libraries}{Docker, Git, \LaTeX, Django, Flask, OPENGL3, Vim}
+
+
+\section{Courses}
+\cvitem{Computer Science}{Database, Computer Architecture, Formal Language \& Automata Theory, Programming and Data Structures, Algorithms, Switching Theory, Innovation Design Lab.}
+\cvitem{Mathematics}{Linear Algebra and ODE, Real and Complex Analysis, Partial Differential Equations, Discrete Mathematics, Probability Theory, Computational Topology, Algebra.}
+\cvitem{Others}{Introduction to Haskell (CIS194)}
+
+\section{Positions of Responsibility}
+\cvitem{2017 -- Present}{\textbf{Coordinator, Competitive Programming, NJACK(Computer Club)}
+    \begin{itemize}
+        \item {Wrote problems for ByteRace, the annual online coding competition of IIT Patna.}
+        \item {Conducted lectures on C++, Algorithms and Data Structures for students.}
+    \end{itemize}
+}
+\cvitem{2018 -- Present}{\textbf{Mentor, Institute Student Mentorship Programme}
+    \begin{itemize}
+        \item {Academic guide to four freshmen year students over the period of two years.}
+    \end{itemize}
+}
 
 \end{document}
 
